@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mima kids | Kids Clothing</title>
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+      <!--Header-->
+    <header class="site-header">
+      <section class="header-left">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="Mima kids logo" class="logo" />
+        </a>
+        <h1>Mima Kids</h1>
+      </section>
+
+      <p class="promo-text">
+        Summer Sale: Up to 20% off! Free Shipping over 800kr
+      </p>
+
+      <form>
+        <label for="search" class="visually-hidden">Search</label>
+        <input type="search" id="search" name="search" placeholder="search" />
+      </form>
+
+      <!--Navigation-->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Profile</a>
+        <a href="#">Contact</a>
+        <a href="product.html">Product</a>
+        <a href="cart.html" id="cart-link">Cart (0)</a>
+      </nav>
+    </header>
+
+    <!--Hero-->
+    <section class="hero">
+      <h2>Fun, Comfortable, Elegant Clothing Line for kids.</h2>
+      <p>Discover stylish and organic fabrics for your little ones.</p>
+      <a class="cta" href="#">Shop New Arrivals</a>
+    </section>
+
+    <!--Main content-->
+    <main class="layout">
+      
+      <article class="products">
+
+        <!--Products-->
+
+        <section data-id="1" data-img="img/top.jpg">
+          <figure>
+            <img src="img/top.jpg" alt="Tops" class="product-img" />
+            <figcaption>Cartoon Print T-Shirt</figcaption>
+          </figure>
+
+          <p class="price">500kr</p>
+
+          <button class="add-to-cart">Add to Cart</button>
+      
+        </section>
+
+        <!--Product 2-->
+
+        <section data-id="2" data-img="img/boy shirt.jpg">
+          <figure>
+            <img src="img/boy shirt.jpg" alt="Boy T-Shirt" class="product-img"/>
+            <figcaption>Cartoon T-Shirt</figcaption>
+          </figure>
+
+          <p class="price">500kr</p>
+
+          <button class="add-to-cart">Add to Cart</button>
+          
+        </section>
+
+        <!--Product 3-->
+
+        <section data-id="3" data-img="img/girl 3D shirt.jpg">
+          <figure>
+            <img src="img/girl 3D shirt.jpg" alt="Girl T-shirt" class="product-img"/>
+            <figcaption>3D Print T-Shirt</figcaption>
+          </figure>
+
+          <p class="price">500kr</p>
+
+          <button class="add-to-cart">Add to Cart</button>
+
+        </section>
+
+        <!--Product 4-->
+
+        <section data-id="4" data-img="img/girl shirt.jpg">
+          <figure>
+            <img src="img/girl shirt.jpg" alt="Girl T-Shirt" class="product-img"/>
+            <figcaption>Classic Girl T-Shirt</figcaption>
+          </figure>
+
+          <p class="price">500kr</p>
+
+          <button class="add-to-cart">Add to Cart</button>
+        </section>
+
+        <!--Product 5-->
+
+        <section data-id="5" data-img="img/leggings.jpg">
+          <figure>
+            <img src="img/leggings.jpg" alt="Leggings" class="product-img" />
+            <figcaption>Leggings</figcaption>
+          </figure>
+
+          <p class="price">1500kr</p>
+
+          <button class="add-to-cart">Add to Cart</button>
+          
+        </section>
+
+        <!--Product 6-->
+
+        <section data-id="6" data-img="img/girl trouser.jpg">
+          <figure>
+            <img src="img/girl trouser.jpg" alt="Girls Trouser" class="product-img"/>
+            <figcaption>Girl Trouser</figcaption>
+          </figure>
+
+          <p class="price">2500kr</p>
+
+          <button class="add-to-cart">Add to Cart</button>
+          
+        </section>
+
+        <!--Product 7-->
+
+        <section data-id="7" data-img="img/trouser.jpg">
+          <figure>
+            <img src="img/trouser.jpg" alt="Denim Jeans" class="product-img" />
+            <figcaption>Denim Jeans</figcaption>
+          </figure>
+          
+          
+           <p class="discount">20% OFF</p>
+
+           <p>
+
+          <span class="old-price">3000kr</span>
+          <span class="new-price">2200kr</span>
+
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+          
+        </section>
+
+        <!--Product 8-->
+
+        <section data-id="8" data-img="img/jacket.jpg">
+          <figure>
+            <img src="img/jacket.jpg" alt="Winter Jacket" class="product-img" />
+            <figcaption>Winter Jacket</figcaption>
+          </figure>
+
+          <p class="discount">20% OFF</p>
+          <p>
+
+          <span class="old-price">4000kr</span>
+          <span class="new-price">3200kr</span>
+
+          </p>
+          <button class="add-to-cart">Add to Cart</button>
+        </section>
+      </article>
+
+      <!--Aside info-->
+      <aside class="sidebar-filters">
+        <h2>Filter By</h2>
+        <section>
+          <fieldset>
+            <legend>Category</legend>
+            <label><input type="checkbox" /> T-Shirt</label>
+            <label><input type="checkbox" /> Hoodies</label>
+            <label><input type="checkbox" /> Jackets</label>
+            <label><input type="checkbox" /> Joggers</label>
+            <label><input type="checkbox" /> shorts</label>
+            <label><input type="checkbox" /> Cartoon T-Shirts</label>
+            <label><input type="checkbox" /> Trousers</label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>Size</legend>
+            <label><input type="checkbox" /> XS</label>
+            <label><input type="checkbox" /> S</label>
+            <label><input type="checkbox" /> M</label>
+            <label><input type="checkbox" /> L</label>
+            <label><input type="checkbox" /> XL</label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>Sex</legend>
+            <label><input type="checkbox" /> Boys</label>
+            <label><input type="checkbox" /> Girls</label>
+            <label><input type="checkbox" /> Unisex</label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>Season</legend>
+            <label><input type="checkbox" /> Summer</label>
+            <label><input type="checkbox" /> Winter</label>
+            <label><input type="checkbox" /> All Season</label>
+          </fieldset>
+        </section>
+
+        <section>
+          <fieldset>
+            <legend>Price</legend>
+            <label><input type="checkbox" /> Under 499kr</label>
+            <label><input type="checkbox" /> 500kr - 999kr</label>
+            <label><input type="checkbox" /> Over 1000</label>
+          </fieldset>
+          <button>Show Result</button>
+        </section>
+      </aside>
+
+      <!--Review-->
+      <section class="review">
+        <h2>Customer Review</h2>
+        <article>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>"Great quality clothes and fast delivery" - Sarah L.</p>
+        </article>
+
+        <article>
+          <p>⭐⭐⭐⭐</p>
+          <p>"The jacket is warm and comfortable" - Reece James</p>
+        </article>
+
+        <article>
+          <p>⭐⭐⭐⭐⭐</p>
+          <p>"Beautiful design and soft fabric" - Joah Pedro</p>
+        </article>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <nav aria-label="Shop navigation">
+        <h3>Shop</h3>
+        <ul>
+          <li><a href="#">New Arrivals</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Sales</a></li>
+        </ul>
+      </nav>
+
+      <!--Customer Operation-->
+      <section>
+        <h3>Customer Service</h3>
+        <ul>
+          <li><a href="#">Contact Support</a></li>
+          <li><a href="#">Order Tracking</a></li>
+          <li><a href="#">Shipping Info</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </section>
+
+      <!--Legal Compliance-->
+      <section>
+        <h3>Legal</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Cookies Policy</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+        </ul>
+      </section>
+
+      <form>
+        <h3>Newsletter</h3>
+
+        <label for="newsletter-email" class="visually-hidden">Email</label>
+
+        <input
+         type="email" 
+         id="newsletter-email" 
+         name="newsletter-email" 
+         placeholder="mimikids@gmail.com" 
+         required 
+        />
+
+        <button type="submit">Subscribe</button>
+      </form>
+
+      <p>&copy; 2026 Mima Kids. All right reserved.</p>
+    </footer>  
+</body>
+</html>

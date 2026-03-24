@@ -1,0 +1,398 @@
+/* Global Reset & Base Styles: Sets consistent layout behavior and default typography for the entire website */
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e6fffa;
+    line-height: 1.6;
+    margin: 0;
+    color: #222;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* Visually-hidden: Improves accessibilty by hiding elements visually but keeping them readable by screen readers*/
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    border: 0;
+}
+
+/* Skip Link: Helps keyboard users skip navigation and jump directly to main content*/
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* Header Layout: Creates a flexible top navigation bar with logo and menu aligned properly*/
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 2rem;
+    background-color: #ffffff;
+    border-bottom: 2px solid #ccc;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/*Header left side: Aligns logo and site title neatly side by side*/
+
+.header-left {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.site-header .logo {
+    width: 60px;
+}
+
+.header-left h1 {
+    font-size: 1.8rem;
+    color: #c92a2a;
+}
+
+.promo-text {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #c92a2a;
+}
+
+/* Navigation Menu Styling: Styles navigation links and adds hover/focus interaction effects*/
+
+
+nav a {
+    margin-left: 1.5rem;
+    text-decoration: none;
+    color: #ff6b6b;
+    font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Focus Styles: Adds visible outlines to links, buttons and inputs for better keyboard accessibility*/
+a:focus,
+button:focus,
+input:focus {
+    outline: 3px solid #000;
+    outline-offset: 3px;
+}
+
+/* Hero section: Craetes a large attention-grabbing banner section with a call-to-action*/
+
+.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #c92a2a;
+    color: #fff;
+}
+
+.hero h2 {
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.cta {
+    background: #ffd6e0;
+    color: #ff6b6b;
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Main page layout(Grid system): Divides the page into two main columns, products aera and sidebar*/
+
+.layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Sidebar Filters */
+
+.sidebar-filters legend {
+    font-weight: 700;  
+}
+
+.sidebar-filters button {
+    margin-top: 1rem;
+}
+
+
+/* Product grid layout: Creates a responsive grid that automatically adjusts product cards based on screen size*/
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 2rem;
+}
+
+.products section {
+    position: relative;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    }
+
+.products section button {
+    margin-top: auto;
+}
+
+
+.products section figure {
+    margin: 0;
+}
+
+.products figcaption {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+/*Price: Highlights pricing information and visually seperates old and dicounted prices*/
+
+.price {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #ff6b6b;
+    margin: auto 1rem 1rem;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: black;
+    margin-right: 8px;
+}
+
+.new-price {
+    color: #ff6b6b;
+    font-weight: bold;
+}
+ /* Discount Badge: Displays promotional discount labels on product cards*/
+
+.discount {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    transition: background-color 500ms ease;
+    animation-name: change-color;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.discount:hover {
+    background-color: #ff0000;
+}
+
+@keyframes change-color {
+    0% {
+        background-color:#000;
+    }
+    50% {
+        background-color:#ff6b6b;
+    }
+    100% {
+        background-color:#ff0000;
+    }
+}
+
+
+/* Buttons: Creates consistent styled buttons with hover and focus effects*/
+
+button {
+    background: #c92a2a;
+    color: white;
+    border: none;
+    padding: 0.6rem 1.4rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: #a61e1e;
+}
+
+/* Inputs: Styles form inputs to match the overall design*/
+
+input[type="search"],
+input[type="email"] {
+    padding: 0.6rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+   
+}
+
+/* Cart item: Organizes cart items using flexible alignment for clean structure*/
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.cart-item figure {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+}
+
+.cart-summary {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.cart-total {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+ /* Review section: Creates a styled testimonial or review block*/
+
+.review {
+    background: white;
+    padding: 2rem;
+    border-radius: 14px;
+    margin: 2rem;
+    text-align: center;
+}
+
+/* Responsive Design*/
+
+/* Tablet view: Adjusts layout a single-column and centers content for medium screens*/
+
+@media (max-width: 992px) {
+
+    .site-header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .header-left {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .promo-text {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .products {
+        order: 1;
+    }
+
+    .sidebar-filters {
+        order: 2;
+        margin-top: 2rem;
+    }
+}
+
+
+/* Mobile view: Optimizes spacing, font sizes, and layout for small screens*/
+
+@media (max-width: 600px) {
+
+
+    .site-header {
+        padding: 1rem;
+    }
+
+    .header-left h1 {
+        font-size: 1.4rem;
+    }
+
+    nav a {
+        margin: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 2.5rem 1rem;
+    }
+
+    .product-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        display: block;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    footer {
+        padding: 2rem 1.5rem;
+    }
+}
+
+
+ /* Footer section: Creates a responsive multi-column fooyer layout with clean link styling*/
+
+ footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    padding: 3rem 4rem;
+    background-color: #fafafa;
+ }
+ 
+
+ footer ul {
+    list-style: none;
+    padding: 0;
+ }
+
+ footer a {
+    text-decoration: none;
+    color: #333;
+ }
